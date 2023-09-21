@@ -1,0 +1,137 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Encode+Sans+Condensed&family=Gluten:wght@300;400;500&family=Handjet:wght@100;500&family=Heebo&family=Josefin+Slab:wght@200&family=Pacifico&family=Playfair+Display:wght@600&family=Roboto+Condensed:ital,wght@0,400;1,300;1,400&family=Shadows+Into+Light&display=swap');
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(images/background2.jpg);
+     background-size: cover;
+
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+nav{
+    display: flex;
+    width: 92%;
+    height: 100px;
+    margin-right: 0;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+}
+nav ul li{
+    display: inline-block;
+    margin: 20px 10px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Barlow', sans-serif;
+}
+nav ul li a:hover{
+    color:rgb(247, 95, 7);
+}
+nav .logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+
+.content image {
+    width: 45%;
+    height: 60%;
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+    
+}
+.image img{
+    margin-left: 150px;
+    width: 300px;
+    height: 300px;
+    border: 8px solid;
+    border-color: white;
+    border-radius: 0 100px 0 100px;
+}
+.content {
+    display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   margin-top: 90px;
+}
+.head {
+    margin-left: 8%;
+   margin-top: 10%;
+margin-right: 10%;
+   
+}
+.head h1{
+    font-weight: bold;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
+.head h1 span {
+    color: rgb(238, 132, 62);
+    font: bold;
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+
+}
+.head p{
+    color: white;
+    line-height: 20px;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    text-align: justify;
+
+}
+.head a{
+background-color: rgba(255, 106, 6, 0.726);
+   padding: 10px 18px;
+   text-decoration: none;
+   color: rgb(252, 251, 251);
+   font-weight: bold;
+   border-radius: 30px;
+   display: inline-block;
+   margin: 30px 0;
+   font-family: 'Barlow', sans-serif;
+
+}
+.contacttext{
+    display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   margin-top: 0;
+   justify-content: space-between;
+
+}
+.phone{
+    margin-left: 5%;
+    margin-top: 50px;
+ margin-right: 10%; 
+}
+.phone h2{
+    color: white;
+    font-family: 'Barlow', sans-serif;
+
+}
+.icons{
+    margin-left: 80%;
+    justify-content: space-around;
+}
+.icons ul li{
+    
+    display: inline-block;
+    margin: 20px 13px;
+    
+
+}
