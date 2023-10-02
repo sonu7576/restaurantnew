@@ -7,11 +7,13 @@
     padding: 0;
 }
 body{
-    background-image: url(images/background2.jpg);
-    
-     background-size: cover;
+    background-color: rgb(248, 244, 244);
+    align-items: center;
      
 
+}
+.background{
+    background-image: url(./images/background2.jpg);
 }
 
 .container {
@@ -72,6 +74,35 @@ nav .logo{
    grid-template-columns: repeat(2, 1fr);
    margin-top: 90px;
 }
+#items{
+    padding: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+.item{
+    display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   padding-top: 10%;
+
+}
+.itemimg img{
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.item h1{
+    color: rgb(5, 5, 5);
+    text-align: center;
+}
+.item p{
+    padding-top: 10%;
+    color: rgb(14, 13, 13);
+    line-height: 30px;
+    
+    text-align: justify;
+}
 .head {
     margin-left: 8%;
    margin-top: 10%;
@@ -123,7 +154,7 @@ background-color: rgba(255, 106, 6, 0.726);
  margin-right: 10%; 
 }
 .phone h2{
-    color: white;
+    color: rgb(7, 7, 7);
     font-family: 'Barlow', sans-serif;
 
 }
@@ -178,14 +209,79 @@ background-color: rgba(255, 106, 6, 0.726);
     }
     
 }
+@media(max-width:800px){
+    .itemimg img{
+        width: 200px;
+        height: 200px;
+
+    }
+    items{
+        padding-top: 100px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+}
+
 @media(max-width:393px){
+    .image img{
+        justify-content: center;
+
+    }
+    .content {
+        display:block
+       
+    }
     .nav ul li a{
         font-size: x-small;
+    }
+    .item p{
+        padding-left: 0;
     }
     .image img{
         height: 50%;
         width: 50%;
+        align-items: center;
+    }
+    .itemimg img{
+        width: 100px;
+        height: 100px;
+
+        margin-left: 40%;
+        
+
+    }
+    .item{
+        display: block;
+        margin-left: 0;
+          
+       padding-top: 10%;
+       
+    
+    }
+    
+    #items{
+        padding-left: 0;
+        padding-right: 50px;
+        
     }
 
 
+
+
 }
+
+@media(max-width:500px){
+    .content {
+        display:block
+       
+    }
+    .item{
+        padding-top: 100px;
+    }
+    .text{
+        padding-left: 20%;
+    }
+
+}
+
